@@ -12,14 +12,18 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("\(count)")
+            Text("Tap Count : \(count)")
                 .padding()
-                .font(.system(size: 40, weight: .bold))
+                .font(.system(size: 50, weight: .bold))
             
             Button("Tap me!",action: {
                 self.count += 1
                 print("Current tap : \(count)")
             })
+            .bold()
+            .font(.system(size: 40))
+            .background(.black)
+            
         }
         
     }
